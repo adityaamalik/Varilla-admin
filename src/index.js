@@ -7,7 +7,7 @@ import reportWebVitals from "./reportWebVitals";
 import axios from "axios";
 
 axios.defaults.headers.post["Content-Type"] = "application/json";
-axios.defaults.baseURL = "http://localhost:3000/";
+axios.defaults.baseURL = "https://varillabackend.herokuapp.com/";
 
 const App = () => (
     <BrowserRouter>
