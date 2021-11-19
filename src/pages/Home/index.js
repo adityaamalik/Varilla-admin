@@ -16,6 +16,9 @@ const Home = (props) => {
         if (username === "admin" && password === "admin") {
             localStorage.setItem("varillaadmin", "loggedin");
             props.history.push("/dashboard");
+        } else if (username === "agent" && password === "agent") {
+            localStorage.setItem("varillaadmin", "loggedin");
+            props.history.push("/agentdashboard");
         } else {
             message.error("Username or Password wrong !");
         }

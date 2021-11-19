@@ -9,6 +9,11 @@ const routes = [
         exact: true,
         component: "Dashboard",
     },
+    {
+        path: ["/agentdashboard"],
+        exact: true,
+        component: "AgentDashboard",
+    },
 ];
 
 export default routes;
